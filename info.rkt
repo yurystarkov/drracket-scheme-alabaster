@@ -2,19 +2,10 @@
 
 (define deps '("base"))
 
-(define black-on-green #s(background #(241 250 223)))
-(define black-on-yellow #s(background #(255 250 188)))
-(define purple #(122 62 157))
-
 (define framework:color-schemes
   '(#hash((colors
            .
-           ((framework:syntax-color:scheme:string
-             black-on-green)
-            (framework:syntax-color:scheme:constant
-             purple)
-            (framework:syntax-color:scheme:comment
-             black-on-yellow)
-            (framework:syntax-color:scheme:parenthesis
-             #(0 150 255))))
-          (name . "Alabaster BG"))))
+           ((framework:syntax-color:scheme:string #s(background #(241 250 223)))
+            (framework:syntax-color:scheme:constant #(122 62 157))
+            (framework:syntax-color:scheme:comment #s(background #(255 250 188)))))
+          (name . "AlabasterBG"))))
